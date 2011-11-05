@@ -25,17 +25,14 @@ random.seed()
 
 
 
-def emotionListener(data):
-
-	pub = rospy.Publisher ('/affective/action', ros_affective.msg.action)
-	
+def emotionListener():
+	rospy.init_node('affective_emotion_detector')
+	pub = rospy.Publisher ('/affective/action', ros_affective.msg.action)	
 	while not rospy.is_shutdown():
 		theCommand = raw_input("Affective action: " )
-
-		pub.publish (turtlesim.msg.action(theCommand))
+		pub.publish (theCommand)
 
 def sensorListener():
-	rospy.init_node('affective_emotion_detector')
 	rospy.Subscriber("/affective/action", ros_affective.msg.action, take_action)
 	rospy.spin() 
 	

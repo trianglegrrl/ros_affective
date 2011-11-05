@@ -30,7 +30,7 @@ random.seed()
 
 
 def unknown_action(data):
-	print 'I have no clue how to ' + data + '.'
+	print 'I have no clue how to ' + str(data.action) + '.'
 
 def greet_me(data): # run around like an idiot 
 	global linear, angular, numSteps, maxSteps, totalTime
@@ -58,10 +58,11 @@ actions = {	'greeting': greet_me,
 }
 
 def take_action(data): #switch/case for what action to take based on the message you receive
+	print data.action
 	try:
-		actions[data]()
+		actions[data.action](data.action)
 	except:
-		action[unknown]()
+		actions['unknown'](data.action)
 
 def expressionListener():
 	rospy.init_node('affective_expression')
