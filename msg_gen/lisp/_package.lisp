@@ -3,6 +3,8 @@
   (:export
    "<EXPRESSION>"
    "EXPRESSION"
+   "<ACTION>"
+   "ACTION"
    "<VELOCITY>"
    "VELOCITY"
   ))

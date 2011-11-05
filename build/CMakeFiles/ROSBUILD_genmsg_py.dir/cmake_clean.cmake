@@ -1,10 +1,11 @@
 FILE(REMOVE_RECURSE
-  "../msg_gen"
   "../src/ros_affective/msg"
+  "../msg_gen"
   "../msg_gen"
   "CMakeFiles/ROSBUILD_genmsg_py"
   "../src/ros_affective/msg/__init__.py"
   "../src/ros_affective/msg/_expression.py"
+  "../src/ros_affective/msg/_action.py"
   "../src/ros_affective/msg/_Velocity.py"
 )
 

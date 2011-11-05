@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alaina/ros_affective
+CMAKE_SOURCE_DIR = /home/alaina/ros/ros_affective
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alaina/ros_affective/build
+CMAKE_BINARY_DIR = /home/alaina/ros/ros_affective/build
 
 # Utility rule file for rospack_genmsg_libexe.
 
@@ -54,6 +54,6 @@ CMakeFiles/rospack_genmsg_libexe.dir/clean:
 .PHONY : CMakeFiles/rospack_genmsg_libexe.dir/clean
 
 CMakeFiles/rospack_genmsg_libexe.dir/depend:
-	cd /home/alaina/ros_affective/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alaina/ros_affective /home/alaina/ros_affective /home/alaina/ros_affective/build /home/alaina/ros_affective/build /home/alaina/ros_affective/build/CMakeFiles/rospack_genmsg_libexe.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alaina/ros/ros_affective/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alaina/ros/ros_affective /home/alaina/ros/ros_affective /home/alaina/ros/ros_affective/build /home/alaina/ros/ros_affective/build /home/alaina/ros/ros_affective/build/CMakeFiles/rospack_genmsg_libexe.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rospack_genmsg_libexe.dir/depend
 

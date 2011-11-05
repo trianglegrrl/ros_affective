@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="ros_affective" type="expression.py" name="affective_expression"/>
+  <node pkg="ros_affective" type="emotion_detector.py" name="affective_emotion_detector"/>
+  <param name="affective/linear_velocity" type="double" value="3.0" />
+  <param name="affective/angular_velocity" type="double" value="3.0" />
+  <param name="affective/max_steps" type="int" value="2" />
+  <param name="affective/total_time" type="int" value="2" />
+</launch>

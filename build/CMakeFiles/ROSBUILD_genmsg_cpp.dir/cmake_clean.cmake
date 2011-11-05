@@ -1,9 +1,10 @@
 FILE(REMOVE_RECURSE
-  "../msg_gen"
   "../src/ros_affective/msg"
+  "../msg_gen"
   "../msg_gen"
   "CMakeFiles/ROSBUILD_genmsg_cpp"
   "../msg_gen/cpp/include/ros_affective/expression.h"
+  "../msg_gen/cpp/include/ros_affective/action.h"
   "../msg_gen/cpp/include/ros_affective/Velocity.h"
 )
 

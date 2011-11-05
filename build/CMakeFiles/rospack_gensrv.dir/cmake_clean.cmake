@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
-  "../msg_gen"
   "../src/ros_affective/msg"
+  "../msg_gen"
   "../msg_gen"
   "CMakeFiles/rospack_gensrv"
 )
