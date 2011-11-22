@@ -1,0 +1,16 @@
+float32 acceptance
+float32 curiosity
+float32 eating
+float32 family
+float32 honor
+float32 idealism
+float32 independence
+float32 order
+float32 physical_activity
+float32 power
+float32 romance
+float32 saving
+float32 social_contract
+float32 status
+float32 tranquility
+float32 vengeance

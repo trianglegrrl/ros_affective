@@ -1,0 +1,20 @@
+(cl:in-package ros_affective-msg)
+(cl:export '(ACTIVITY-VAL
+          ACTIVITY
+          REGULARITY-VAL
+          REGULARITY
+          APPROACH_OR_WITHDRAWAL-VAL
+          APPROACH_OR_WITHDRAWAL
+          ADAPTABILITY-VAL
+          ADAPTABILITY
+          INTENSITY-VAL
+          INTENSITY
+          MOOD-VAL
+          MOOD
+          DISTRACTIBILITY-VAL
+          DISTRACTIBILITY
+          PERSISTENCE_AND_ATTENTION_SPAN-VAL
+          PERSISTENCE_AND_ATTENTION_SPAN
+          SENSITIVITY-VAL
+          SENSITIVITY
+))

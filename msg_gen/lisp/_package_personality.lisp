@@ -1,0 +1,10 @@
+(cl:in-package ros_affective-msg)
+(cl:export '(INTRAVERT_EXTRAVERT-VAL
+          INTRAVERT_EXTRAVERT
+          INTUITIVE_SENSING-VAL
+          INTUITIVE_SENSING
+          THINKING_FEELING-VAL
+          THINKING_FEELING
+          JUDGING_PERCEIVING-VAL
+          JUDGING_PERCEIVING
+))

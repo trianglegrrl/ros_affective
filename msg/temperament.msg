@@ -1,0 +1,9 @@
+float32 activity
+float32 regularity
+float32 approach_or_withdrawal
+float32 adaptability
+float32 intensity
+float32 mood
+float32 distractibility
+float32 persistence_and_attention_span
+float32 sensitivity

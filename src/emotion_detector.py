@@ -9,6 +9,10 @@
 #	9th Sense Robotics
 #	2011-11-05
 #
+# This work is licensed under the Creative Commons Attribution-NonCommercial 3.0 Unported License. 
+# To view a copy of this license, visit http://creativecommons.org/licenses/by-nc/3.0/ 
+# or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+#
 #	v0.1 publishes action instructions to /affective/action
 #	
 #	
@@ -16,14 +20,11 @@
 import roslib; roslib.load_manifest('ros_affective')
 import rospy
 import std_msgs
-import turtlesim.msg
 import ros_affective.msg
 import random
 import time
 
 random.seed()
-
-
 
 def emotionListener():
 	rospy.init_node('affective_emotion_detector')
@@ -34,8 +35,7 @@ def emotionListener():
 
 def sensorListener():
 	rospy.Subscriber("/affective/action", ros_affective.msg.action, take_action)
-	rospy.spin() 
-	
+	rospy.spin() 	
 	
 if __name__ == "__main__":
 	try:

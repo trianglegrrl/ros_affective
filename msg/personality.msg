@@ -1,0 +1,4 @@
+float32 intravert_extravert
+float32 intuitive_sensing
+float32 thinking_feeling
+float32 judging_perceiving

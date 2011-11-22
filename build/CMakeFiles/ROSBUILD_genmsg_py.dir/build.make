@@ -41,12 +41,49 @@ CMAKE_BINARY_DIR = /home/alaina/ros/ros_affective/build
 
 CMakeFiles/ROSBUILD_genmsg_py: ../src/ros_affective/msg/__init__.py
 
+../src/ros_affective/msg/__init__.py: ../src/ros_affective/msg/_mood.py
 ../src/ros_affective/msg/__init__.py: ../src/ros_affective/msg/_expression.py
 ../src/ros_affective/msg/__init__.py: ../src/ros_affective/msg/_action.py
+../src/ros_affective/msg/__init__.py: ../src/ros_affective/msg/_personality.py
+../src/ros_affective/msg/__init__.py: ../src/ros_affective/msg/_sense.py
+../src/ros_affective/msg/__init__.py: ../src/ros_affective/msg/_disposition.py
+../src/ros_affective/msg/__init__.py: ../src/ros_affective/msg/_temperament.py
 ../src/ros_affective/msg/__init__.py: ../src/ros_affective/msg/_Velocity.py
+../src/ros_affective/msg/__init__.py: ../src/ros_affective/msg/_motivation.py
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/alaina/ros/ros_affective/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/ros_affective/msg/__init__.py"
-	/opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --initpy /home/alaina/ros/ros_affective/msg/expression.msg /home/alaina/ros/ros_affective/msg/action.msg /home/alaina/ros/ros_affective/msg/Velocity.msg
+	/opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --initpy /home/alaina/ros/ros_affective/msg/mood.msg /home/alaina/ros/ros_affective/msg/expression.msg /home/alaina/ros/ros_affective/msg/action.msg /home/alaina/ros/ros_affective/msg/personality.msg /home/alaina/ros/ros_affective/msg/sense.msg /home/alaina/ros/ros_affective/msg/disposition.msg /home/alaina/ros/ros_affective/msg/temperament.msg /home/alaina/ros/ros_affective/msg/Velocity.msg /home/alaina/ros/ros_affective/msg/motivation.msg
+
+../src/ros_affective/msg/_mood.py: ../msg/mood.msg
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/ros/core/roslib/scripts/gendeps
+../src/ros_affective/msg/_mood.py: ../manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/ros/tools/rospack/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/ros/core/roslib/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/ros/core/rosbuild/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/ros/core/roslang/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/messages/std_srvs/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/manifest.xml
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_comm/messages/std_srvs/srv_gen/generated
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/msg_gen/generated
+../src/ros_affective/msg/_mood.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alaina/ros/ros_affective/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/ros_affective/msg/_mood.py"
+	/opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/alaina/ros/ros_affective/msg/mood.msg
 
 ../src/ros_affective/msg/_expression.py: ../msg/expression.msg
 ../src/ros_affective/msg/_expression.py: /opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
@@ -75,7 +112,7 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/ros_affective/msg/__init__.py
 ../src/ros_affective/msg/_expression.py: /opt/ros/electric/stacks/ros_comm/messages/std_srvs/srv_gen/generated
 ../src/ros_affective/msg/_expression.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/msg_gen/generated
 ../src/ros_affective/msg/_expression.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alaina/ros/ros_affective/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alaina/ros/ros_affective/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/ros_affective/msg/_expression.py"
 	/opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/alaina/ros/ros_affective/msg/expression.msg
 
@@ -106,9 +143,133 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/ros_affective/msg/__init__.py
 ../src/ros_affective/msg/_action.py: /opt/ros/electric/stacks/ros_comm/messages/std_srvs/srv_gen/generated
 ../src/ros_affective/msg/_action.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/msg_gen/generated
 ../src/ros_affective/msg/_action.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alaina/ros/ros_affective/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alaina/ros/ros_affective/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/ros_affective/msg/_action.py"
 	/opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/alaina/ros/ros_affective/msg/action.msg
+
+../src/ros_affective/msg/_personality.py: ../msg/personality.msg
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/ros/core/roslib/scripts/gendeps
+../src/ros_affective/msg/_personality.py: ../manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/ros/tools/rospack/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/ros/core/roslib/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/ros/core/rosbuild/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/ros/core/roslang/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/messages/std_srvs/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/manifest.xml
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_comm/messages/std_srvs/srv_gen/generated
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/msg_gen/generated
+../src/ros_affective/msg/_personality.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alaina/ros/ros_affective/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/ros_affective/msg/_personality.py"
+	/opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/alaina/ros/ros_affective/msg/personality.msg
+
+../src/ros_affective/msg/_sense.py: ../msg/sense.msg
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/ros/core/roslib/scripts/gendeps
+../src/ros_affective/msg/_sense.py: ../manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/ros/tools/rospack/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/ros/core/roslib/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/ros/core/rosbuild/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/ros/core/roslang/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/messages/std_srvs/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/manifest.xml
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_comm/messages/std_srvs/srv_gen/generated
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/msg_gen/generated
+../src/ros_affective/msg/_sense.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alaina/ros/ros_affective/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/ros_affective/msg/_sense.py"
+	/opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/alaina/ros/ros_affective/msg/sense.msg
+
+../src/ros_affective/msg/_disposition.py: ../msg/disposition.msg
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/ros/core/roslib/scripts/gendeps
+../src/ros_affective/msg/_disposition.py: ../manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/ros/tools/rospack/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/ros/core/roslib/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/ros/core/rosbuild/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/ros/core/roslang/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/messages/std_srvs/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/manifest.xml
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_comm/messages/std_srvs/srv_gen/generated
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/msg_gen/generated
+../src/ros_affective/msg/_disposition.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alaina/ros/ros_affective/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/ros_affective/msg/_disposition.py"
+	/opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/alaina/ros/ros_affective/msg/disposition.msg
+
+../src/ros_affective/msg/_temperament.py: ../msg/temperament.msg
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/ros/core/roslib/scripts/gendeps
+../src/ros_affective/msg/_temperament.py: ../manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/ros/tools/rospack/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/ros/core/roslib/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/ros/core/rosbuild/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/ros/core/roslang/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/messages/std_srvs/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/manifest.xml
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_comm/messages/std_srvs/srv_gen/generated
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/msg_gen/generated
+../src/ros_affective/msg/_temperament.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alaina/ros/ros_affective/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/ros_affective/msg/_temperament.py"
+	/opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/alaina/ros/ros_affective/msg/temperament.msg
 
 ../src/ros_affective/msg/_Velocity.py: ../msg/Velocity.msg
 ../src/ros_affective/msg/_Velocity.py: /opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
@@ -137,15 +298,52 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/ros_affective/msg/__init__.py
 ../src/ros_affective/msg/_Velocity.py: /opt/ros/electric/stacks/ros_comm/messages/std_srvs/srv_gen/generated
 ../src/ros_affective/msg/_Velocity.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/msg_gen/generated
 ../src/ros_affective/msg/_Velocity.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alaina/ros/ros_affective/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alaina/ros/ros_affective/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/ros_affective/msg/_Velocity.py"
 	/opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/alaina/ros/ros_affective/msg/Velocity.msg
 
+../src/ros_affective/msg/_motivation.py: ../msg/motivation.msg
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/ros/core/roslib/scripts/gendeps
+../src/ros_affective/msg/_motivation.py: ../manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/ros/tools/rospack/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/ros/core/roslib/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/ros/core/rosbuild/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/ros/core/roslang/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/messages/std_srvs/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/manifest.xml
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_comm/messages/std_srvs/srv_gen/generated
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/msg_gen/generated
+../src/ros_affective/msg/_motivation.py: /opt/ros/electric/stacks/ros_tutorials/turtlesim/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alaina/ros/ros_affective/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/ros_affective/msg/_motivation.py"
+	/opt/ros/electric/stacks/ros_comm/clients/rospy/scripts/genmsg_py.py --noinitpy /home/alaina/ros/ros_affective/msg/motivation.msg
+
 ROSBUILD_genmsg_py: CMakeFiles/ROSBUILD_genmsg_py
 ROSBUILD_genmsg_py: ../src/ros_affective/msg/__init__.py
+ROSBUILD_genmsg_py: ../src/ros_affective/msg/_mood.py
 ROSBUILD_genmsg_py: ../src/ros_affective/msg/_expression.py
 ROSBUILD_genmsg_py: ../src/ros_affective/msg/_action.py
+ROSBUILD_genmsg_py: ../src/ros_affective/msg/_personality.py
+ROSBUILD_genmsg_py: ../src/ros_affective/msg/_sense.py
+ROSBUILD_genmsg_py: ../src/ros_affective/msg/_disposition.py
+ROSBUILD_genmsg_py: ../src/ros_affective/msg/_temperament.py
 ROSBUILD_genmsg_py: ../src/ros_affective/msg/_Velocity.py
+ROSBUILD_genmsg_py: ../src/ros_affective/msg/_motivation.py
 ROSBUILD_genmsg_py: CMakeFiles/ROSBUILD_genmsg_py.dir/build.make
 .PHONY : ROSBUILD_genmsg_py
 
