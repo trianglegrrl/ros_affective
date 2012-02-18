@@ -17,7 +17,7 @@
 
 import roslib; roslib.load_manifest('ros_affective')
 import rospy
-import std_msgs
+from std_msgs.msg import String
 import ros_affective.msg
 import random
 import time
@@ -26,19 +26,39 @@ try:
 except:
    import pickle
    
-
+"""
+senseListener - The sensory inputs for the robot have triggered something notable. This could be 
+anything from movement to the detection of a particular face, object, sound, ad infinitum (depending
+on the robot). The attention node will trigger possible actuator movement, but it could also trigger
+some input to the robot's recognition memory. Interesting stuff when you incorporate temporal components,
+no?
+"""
 def senseListener(data):
-	print 'Sense received: ' + pickle.dumps(data)
+  # this is how we report some sort of state change
+  global state_change
+  state_change.publish('Attention - Sense received: ' + data.what_happened)
 
+"""
+personalityListener- Perhaps the personality has changed. Or perhaps not. I currently envision this as
+a manual change to personality for either experimentation or a desired behavioural change (how does a 
+robot act differently if it becomes more introverted? Or more judging?
+"""
 def personalityListener(data):
-	print 'personality changed: ' + pickle.dumps(data)
+  global state_change
+  state_change.publish('Attention - Personality changed: IE = ' + str(data.intravert_extravert)
+    + ', NS = ' + str(data.intuitive_sensing) + 
+    + ', TF = ' + str(data.thinking_feeling) + 
+    + ', JP = ' + str(data.judging_perceiving)
+    )
 	
 if __name__ == "__main__":
-	try:
-		rospy.init_node("affective_attention_director")
-		rospy.Subscriber ("/affective/sense", ros_affective.message.sense, senseListener)
-		rospy.Subscriber ("/affective/personality", ros_affective.message.personality, personalityListener)
-		rospy.spin()
-	except rospy.ROSInterruptException: pass
+  try:
+    rospy.init_node("affective_attention_director")
+    state_change = rospy.Publisher ("/affective/state_change", String)
+    rospy.Subscriber ("/affective/sense", ros_affective.msg.sense, senseListener)
+    rospy.Subscriber ("/affective/personality", ros_affective.msg.personality, personalityListener)
+    rospy.spin()
+  except rospy.ROSInterruptException, KeyboardInterrupt: 
+    exit(1)
 
 

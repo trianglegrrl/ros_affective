@@ -49,7 +49,7 @@ class sense(roslib.message.Message):
     try:
       _x = self.what_happened
       length = len(_x)
-      buff.write(struct.pack('<I%ss'%length, length, _x.encode()))
+      buff.write(struct.pack('<I%ss'%length, length, _x))
     except struct.error as se: self._check_types(se)
     except TypeError as te: self._check_types(te)
 
@@ -83,7 +83,7 @@ class sense(roslib.message.Message):
     try:
       _x = self.what_happened
       length = len(_x)
-      buff.write(struct.pack('<I%ss'%length, length, _x.encode()))
+      buff.write(struct.pack('<I%ss'%length, length, _x))
     except struct.error as se: self._check_types(se)
     except TypeError as te: self._check_types(te)
 

@@ -16,6 +16,7 @@ float32 mood
 float32 distractibility
 float32 persistence_and_attention_span
 float32 sensitivity
+
 """
   __slots__ = ['activity','regularity','approach_or_withdrawal','adaptability','intensity','mood','distractibility','persistence_and_attention_span','sensitivity']
   _slot_types = ['float32','float32','float32','float32','float32','float32','float32','float32','float32']

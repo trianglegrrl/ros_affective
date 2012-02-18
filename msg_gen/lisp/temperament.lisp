@@ -226,10 +226,10 @@
   "d891d92b30bb43db8b4b44937adb2cc7")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<temperament>)))
   "Returns full string definition for message of type '<temperament>"
-  (cl:format cl:nil "float32 activity~%float32 regularity~%float32 approach_or_withdrawal~%float32 adaptability~%float32 intensity~%float32 mood~%float32 distractibility~%float32 persistence_and_attention_span~%float32 sensitivity~%~%"))
+  (cl:format cl:nil "float32 activity~%float32 regularity~%float32 approach_or_withdrawal~%float32 adaptability~%float32 intensity~%float32 mood~%float32 distractibility~%float32 persistence_and_attention_span~%float32 sensitivity~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'temperament)))
   "Returns full string definition for message of type 'temperament"
-  (cl:format cl:nil "float32 activity~%float32 regularity~%float32 approach_or_withdrawal~%float32 adaptability~%float32 intensity~%float32 mood~%float32 distractibility~%float32 persistence_and_attention_span~%float32 sensitivity~%~%"))
+  (cl:format cl:nil "float32 activity~%float32 regularity~%float32 approach_or_withdrawal~%float32 adaptability~%float32 intensity~%float32 mood~%float32 distractibility~%float32 persistence_and_attention_span~%float32 sensitivity~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <temperament>))
   (cl:+ 0
      4
