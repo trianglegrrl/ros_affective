@@ -1,10 +1,11 @@
 Created October 2011 by Alaina Hardie
-Licensed under GPL
+Licensed under GPLv2 or later
 
-30 Oct 2011
+NOTE:
 
-Currently just a bunch of action testing with turtlesim. Getting familiar with
-ROS development.
+This repo is deprecated.
+
+ros_affective is in a private repo - will move back to github when it is ready for release.
 
 Alaina Hardie
 Toronto, ON
